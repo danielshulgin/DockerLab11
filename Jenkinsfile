@@ -5,6 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
+                sh "chmod +x -R ${env.WORKSPACE}"
                 sh "./bot.sh"
             }
         }
