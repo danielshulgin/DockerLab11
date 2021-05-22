@@ -1,6 +1,3 @@
-FROM jenkins/jenkins:lts-jdk11
+FROM alpine:3.5
 
-USER root
-RUN apt-get update && apt-get install
-
-USER jenkins
+EXPOSE 5000
